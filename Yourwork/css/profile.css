@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Genos:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Itim&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Mina:wght@400;700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poiret+One&family=Montserrart:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrart:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*
+
+CSS rules to specify families
+
+font-family: 'Baloo 2', cursive;
+font-family: 'Barlow', sans-serif;
+font-family: 'Genos', sans-serif;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Josefin Slab', serif;
+font-family: 'Mina', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poiret One', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Prompt', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+
+*/
+
+@font-face {
+  font-family: sansation;
+  src: url('../sansation/Sansation_Regular.ttf');
+}
+
+@font-face {
+  font-family: sansation_bold;
+  src: url('../sansation/Sansation_Bold.ttf');
+}
+
+*,
+*:before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --text-color-primary: #179931;
+  --text-color-secondary: #fff;
+}
+
+body {
+  width: 100%;
+  font-family: sansation;
+}
+
+header {
+  width: 100%;
+  min-height: 600px;
+  background: linear-gradient(#007FA711, #007FA766), url('../images/IMG-20220309-WA0001.jpg') no-repeat center;
+  background-size: cover;
+}
+
+header nav {
+  position:static;
+}
+
+
+
+/*------- Profile info section -------*/
+
+header .profile_info {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -10;
+}
+
+header .profile_info>div {
+  margin: 0 100px;
+}
+
+header .avatar {
+  height: max-content;
+  display: grid;
+  place-content: center;
+}
+
+header .avatar .avatar_image {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  display: block;
+  border: 1px solid #fff;
+}
+
+header .avatar .edit_avatar,
+header .profile_info .user_details .edit_info {
+  color: var(--text-color-secondary);
+  font-size: 20px;
+  border: 1px solid var(--text-color-secondary);
+  border-radius: 5px;
+  background: #318BD1BD;
+  padding: 10px 30px;
+  margin-top: 30px;
+}
+
+header .profile_info .user_details {
+  color: var(--text-color-secondary);
+  font-size: 1.5rem;
+}
+
+header .profile_info .user_details .user_name {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+header .profile_info .user_details p {
+  margin-bottom: 10px;
+}
+
+
+
+/*------- Main section -------*/
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  background: url('../images/IMG-20220207-WA0014.jpg') no-repeat 0 0/ cover;
+  padding-bottom: 50px;
+}
+
+main .about_user {
+  min-width: 1000px;
+  width: 1000px;
+  height: max-content;
+  background: var(--text-color-secondary);
+  box-shadow: 10px 10px 20px #A5A7B5;
+  border-radius: 20px;
+  padding: 3%;
+  margin: -80px auto 0 auto;
+}
+
+main .about_user h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+main .about_user textarea {
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  border: 2px solid #7AB7E7;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+main .about_user textarea::placeholder {
+  font-size: 20px;
+}
+
+main .about_user .map {
+  width: 100%;
+  height: 300px;
+  background: #ddd;
+}
+
+
+@media only screen and (max-width:1000px) {
+  main .about_user {
+    min-width: 100%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:600px) {
+header .profile_info {
+  flex-direction: column;
+}
+header .profile_info>div {
+  margin: 0;
+  margin-bottom: 20px;
+}
+}
+
+
+
+/*------- Update form section -------*/
+
+.update_form {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  transform: scale(0);
+  transition: .3s;
+}
+
+.update_form.open {
+  display: flex;
+  animation: update_form .3s linear forwards;
+}
+
+@keyframes update_form {
+  95% {
+    transform: scale(1);
+  }
+
+  100% {
+    background: #fff4;
+    transform: scale(1);
+  }
+}
+
+.update_form form {
+  width: 700px;
+  height: max-content;
+  background: var(--text-color-secondary);
+  padding: 50px;
+  border-radius: 10px;
+  border: 2px solid #63ADE6;
+}
+
+.update_form .logo {
+  height: max-content;
+  position: relative;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.update_form .logo a {
+  text-decoration: none;
+  font-size: 30px;
+  color: var(--text-color-primary);
+}
+
+.update_form .logo h2 {
+  font-weight: 400;
+}
+
+.update_form .logo .close_btn {
+  position: absolute;
+  right: 0;
+  background: none;
+  border: none;
+  font-size: 35px;
+}
+
+.update_form form .location h3,
+.update_form form .personal_info h3 {
+  margin: 20px 0;
+}
+
+.update_form form>div>div {
+  margin-bottom: 25px;
+}
+
+.update_form form>div .bottom_input {
+  display: flex;
+}
+
+.update_form form>div .bottom_input div {
+  flex: 1;
+}
+
+.update_form form>div>div label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.update_form form>div>div input {
+  padding: 10px 15px;
+  width: 100%;
+  border: 1px solid #63ADE6;
+  border-radius: 20px;
+}
+
+.update_form form #update-form {
+  padding: 13px;
+  font-size: 25px;
+  border-radius: 30px;
+  color: var(--text-color-secondary);
+  border: none;
+  background: #63ADE6;
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+}

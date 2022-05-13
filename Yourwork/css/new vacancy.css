@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Genos:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Itim&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Mina:wght@400;700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poiret+One&family=Montserrart:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrart:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*
+
+CSS rules to specify families
+
+font-family: 'Baloo 2', cursive;
+font-family: 'Barlow', sans-serif;
+font-family: 'Genos', sans-serif;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Josefin Slab', serif;
+font-family: 'Mina', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poiret One', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Prompt', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+
+*/
+
+@font-face {
+  font-family: sansation;
+  src: url('../sansation/Sansation_Regular.ttf');
+}
+
+@font-face {
+  font-family: sansation_bold;
+  src: url('../sansation/Sansation_Bold.ttf');
+}
+
+*,
+*:before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --text-color-primary: #179931;
+  --text-color-secondary: aliceblue;
+}
+
+body {
+  width: 100%;
+  font-family: sansation;
+}
+
+header {
+  width: 100%;
+  height: max-content;
+  background: #2f2f2f;
+}
+
+header nav {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 3%;
+}
+
+header nav .logo,
+footer div .logo {
+  display: flex;
+}
+
+header nav .logo a,
+footer div .logo a {
+  text-decoration: none;
+  color: var(--text-color-secondary);
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sansation_bold
+}
+
+header nav .logo a span {
+  color: var(--text-color-primary);
+}
+
+
+
+
+header .header_content {
+  width: 100%;
+  height: max-content;
+  padding: 50px 7%;
+  font-weight: 400;
+}
+
+header .header_content h1 {
+  color: var(--text-color-primary);
+  font-size: 45px;
+  font-family: sansation_bold;
+}
+
+header .header_content .content {
+  color: var(--text-color-primary);
+  width: 600px;
+  margin: 30px 0;
+  font-size: 20px;
+}
+
+
+
+/* Main section */
+
+main {
+  min-height: 100vh;
+}
+
+.create_order {
+  width: 1360px;
+  max-width: 1360px;
+  display: flex;
+  margin: 100px auto;
+  background: #2f2f2f;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+
+
+/* Create order form's left section */
+
+.create_order .left_image {
+  flex: 1.22;
+  height: 100%;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+
+
+/* Create order form's right section */
+
+.create_order form {
+  flex: 1;
+  color: var(--text-color-secondary);
+  padding: 50px;
+}
+
+.create_order h1 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.create_order .form_top {
+  padding: 40px 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--text-color-secondary);
+}
+
+.create_order .category,
+.create_order .price_range {
+  margin-bottom: 20px;
+}
+
+.create_order .category label,
+.create_order .price_range label,
+.create_order .estimated_time label {
+  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.create_order .category select {
+  width: 100%;
+  padding: 8px 20px;
+  background: var(--text-color-secondary);
+  border: .5px solid var(--text-color-secondary);
+  outline: none;
+  border-radius: 30px;
+}
+
+
+
+
+.create_order .price_range .inputs,
+.create_order .price_range .inputs div {
+  display: flex;
+  align-items: center;
+}
+
+.create_order .price_range .inputs label {
+  font-size: 20px;
+  margin: 0;
+  margin-right: 20px;
+}
+
+
+
+
+.create_order .price_range .inputs input,
+.create_order .estimated_time input {
+  padding: 8px 20px;
+  background: var(--text-color-secondary);
+  border: .5px solid var(--text-color-secondary);
+  outline: none;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+
+.create_order .estimated_time label {
+  display: block;
+}
+
+.create_order .estimated_time input {
+  width: 100%;
+  margin: 0;
+}
+
+
+
+.create_order .contacts h2 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.create_order .contacts .contact_details {
+  margin-bottom: 40px;
+}
+
+.create_order .contacts .contact_details .inputs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.create_order .contacts .contact_details label {
+  display: inline-block;
+  font-size: 20px;
+  width: 150px;
+}
+
+.create_order .contacts .contact_details input {
+  width: 100%;
+  background: var(--text-color-secondary);
+  padding: 8px 20px;
+  margin: 0;
+  border: .5px solid var(--text-color-secondary);
+  outline: none;
+  border-radius: 30px;
+}
+
+
+
+
+
+.create_order .contacts .description label {
+  font-size: 20px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.create_order .contacts .description textarea {
+  width: 100%;
+  padding: 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.create_order .contacts .description .attach_file,
+.create_order .submit_button {
+  padding: 8px 20px;
+  background: var(--text-color-secondary);
+  border: none;
+  outline: none;
+  border-radius: 30px;
+}
+
+.create_order .submit_button {
+  float: right;
+  color: var(--text-color-secondary);
+  background: var(--text-color-primary);
+  font-size: 20px;
+}
+
+
+
+
+@media only screen and (max-width:1450px) {
+  .create_order {
+    width: 80%;
+    flex-direction: column;
+  }
+}
+
+
+@media only screen and (max-width:815px) {
+  .create_order {
+    width: 85%;
+  }
+}
+
+
+@media only screen and (max-width:790px) {
+  .create_order {
+    width: 90%;
+  }
+
+  .create_order img {
+    display: none;
+  }
+
+  .create_order .price_range .inputs,
+  .create_order .price_range .inputs div {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .create_order .price_range .inputs div label,
+  .create_order .price_range .inputs div input {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  .create_order {
+    border-radius: 25px;
+  }
+
+  .create_order form {
+    padding: 10%;
+  }
+
+  .create_order .contacts .contact_details .inputs {
+    flex-direction: column;
+  }
+
+  .create_order .contacts .contact_details label,
+  .create_order .contacts .contact_details input {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .create_order .submit_button {
+    width: 100%;
+    margin-top: 30px;
+  }
+}

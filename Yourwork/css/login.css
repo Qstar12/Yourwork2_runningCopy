@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Genos:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Itim&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Mina:wght@400;700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poiret+One&family=Montserrart:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrart:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*
+
+CSS rules to specify families
+
+font-family: 'Baloo 2', cursive;
+font-family: 'Barlow', sans-serif;
+font-family: 'Genos', sans-serif;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Josefin Slab', serif;
+font-family: 'Mina', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poiret One', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Prompt', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+
+*/
+
+@font-face {
+  font-family: sansation;
+  src: url('../sansation/Sansation_Regular.ttf');
+}
+
+@font-face {
+  font-family: sansation_bold;
+  src: url('../sansation/Sansation_Bold.ttf');
+}
+
+*,
+*:before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sansation;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --text-color-primary: #179931;
+  --text-color-secondary: #fff;
+}
+
+body {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  min-height: 100vh;
+  padding: 3% 5%;
+  overflow: scroll;
+}
+
+header .logo,
+footer div .logo {
+  display: flex;
+}
+
+header .logo {
+  justify-content: center;
+}
+
+header .logo a,
+footer div .logo a {
+  text-decoration: none;
+  color: var(--text-color-secondary);
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sansation_bold
+}
+
+header .logo a {
+  color: var(--text-color-primary);
+}
+
+header .logo a span {
+  color: var(--text-color-primary);
+}
+
+
+
+
+/*------- Log in section -------*/
+
+.login {
+  width: 100%;
+  height: max-content;
+  background: #fffb;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  transition: .3s;
+}
+
+.login form {
+  width: 300px;
+  height: max-content;
+  background: var(--text-color-secondary);
+  padding: 30px;
+  border-radius: 10px;
+  border: .5px solid gray;
+}
+
+.login form h2 {
+  text-align: center;
+  color: var(--text-color-primary);
+  margin-bottom: 20px;
+}
+
+.login form>div {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.login form div label {
+  font-size: 15px;
+  display: block;
+  margin-bottom: 10px;
+  color: var(--text-color-primary);
+}
+
+.login form div input {
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 30px;
+  border: 1px solid gray;
+  font-size: 14px;
+}
+
+.login form>input,
+.login form .button {
+  text-decoration: none;
+  width: max-content;
+  padding: 5px 30px;
+  display: block;
+  background: var(--text-color-primary);
+  color: var(--text-color-secondary);
+  border: 1px solid var(--text-color-primary);
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  transition: .3s;
+}
+
+.login form>input:hover,
+.login form .button:hover {
+  background: var(--text-color-secondary);
+  color: var(--text-color-primary);
+  border: 1px solid var(--text-color-primary);
+}
+
+.login form hr {
+  background: black;
+  height: 1px;
+  border: none;
+}
+
+.login form hr+div p {
+  text-align: center;
+  font-size: 14px;
+  margin: 10px auto;
+}

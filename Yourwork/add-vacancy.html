@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YourWork - Homepage</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../../fontawesome-free-5.15.4-web/css/all.css">
+
+  <link rel="stylesheet" href="./css/navigation.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/add-vacancy.css">
+</head>
+
+<body>
+
+  <header id="header">
+    <nav id="navigation">
+      <div class="logo">
+        <a href="index.html"><span>Your</span>Work</a>
+      </div>
+
+      <div class="menu">
+        <button class="menu-close-icon"><i class="bi bi-x"></i></button>
+
+        <div class="menu-items">
+          <ul class="links">
+            <li><a class="link" href="./index.html">Home</a></li>
+            <li><a class="link" href="./find-vacancy.html">Find new vacancy</a></li>
+          </ul>
+
+          <div class="search">
+            <input type="search" name="search" id="search-input" placeholder="Type to search...">
+            <label id="search-button" for="search"><i class="bi bi-search"></i></label>
+          </div>
+
+          <ul class="buttons">
+            <li class="link" id="signup_btn"><button type="button">My profile</button></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="add-vacancy-form">
+      <img class="left_image" src="./images/IMG_20220302_162417_606.JPG">
+
+      <form method="post">
+        <h1>Fill out the form to add a new vacancy</h1>
+
+        <div class="form_top">
+          <div class="category">
+            <label for="category">Select the category</label>
+            <select name="category" id="category">
+              <option disabled selected>Select...</option>
+              <option value="Development and IT">Development and IT</option>
+              <option value="Design and Creative">Design and Creative</option>
+              <option value="Sales and Marketing">Sales and Marketing</option>
+              <option value="Writing and Translation">Writing and Translation</option>
+              <option value="Admin and Customer support">Admin and Customer support</option>
+              <option value="Finance and Accounting">Finance and Accounting</option>
+              <option value="Politics">Politics</option>
+              <option value="HR and training">HR and training</option>
+              <option value="Engineering and Architecture">Engineering and Architecture</option>
+            </select>
+          </div>
+
+          <div class="price_range">
+            <label for="from">Add sallary range</label>
+            <div class="inputs">
+              <div>
+                <label for="from">from</label>
+                <input type="text" name="price" id="from" placeholder="100$">
+              </div>
+
+              <div>
+                <label for="to">to</label>
+                <input type="text" name="price" id="to" placeholder="1000$">
+              </div>
+            </div>
+          </div>
+
+          <div class="estimated_time">
+            <label for="date_time">Estimated lead time</label>
+            <input type="datetime-local" name="date_time" id="date_time">
+          </div>
+        </div>
+
+
+        <div class="contacts">
+
+          <h2>Contact me using these credentials</h2>
+
+          <div class="contact_details">
+            <div class="inputs">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Email...">
+            </div>
+            <div class="inputs">
+              <label for="telephone">Telephone</label>
+              <input type="number" id="telephone" placeholder="Telephone...">
+            </div>
+          </div>
+
+          <div class="description">
+            <label for="description">Describe about the vacancy</label>
+            <textarea name="description" id="description" cols="30" rows="7" placeholder="Describe about the vacancy that you are going to add to our site."></textarea>
+            <input class="attach_file" type="button" value="Attach file">
+          </div>
+        </div>
+
+        <input class="submit_button" type="submit" value="Create order">
+      </form>
+    </section>
+  </main>
+
+
+  <!-- Footer section -->
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-logo">
+        <div class="logo">
+          <h2><a href="index.html">YourWork</a> in short</h2>
+        </div>
+        <p style="font-weight: 700;"><i><span style="font-size: 30px;">"</span>Finding the best employees and better jobs<span style="font-size: 30px;">"</span></i></p>
+        <p><span>YourWork</span> website is designed for job search, <span>YourWork</span> provides a large database of different job categories where you can find what you like.<br><br>Also post your vacancies, we share them all around the world.</p>
+      </div>
+
+      <div class="social-media">
+        <h2>Connect us on</h2>
+        <div class="links">
+          <a class="link" href="#"><img src="./icons/2643199_facebook_friend_media_network_page_icon.svg"></a>
+          <a class="link" href="#"><img src="./icons/5279112_camera_instagram_social media_instagram logo_icon.svg"></a>
+          <a class="link" href="#"><img src="./icons/5279123_tweet_twitter_twitter logo_icon.svg"></a>
+        </div>
+        <p>Connect us on social networks, feel free to contact our agents for any issue.</p>
+      </div>
+
+      <form class="newsletter" action="" method="post">
+        <h2>Want to stay updated ?</h2>
+
+        <div class="email">
+          <input type="text" name="email" id="email" placeholder="Type your mail...">
+          <input type="submit" value="Subscribe">
+        </div>
+        <p>Subscribe to our news letter to be updated about us, we send direct mails to your email on new updates.</p>
+      </form>
+    </div>
+
+    <div class="footer-bottom">
+      <div>
+        <p>Copyright 2022, All rights reserved.</p>
+
+        <ul class="links">
+          <li><a class="link" href="#">Guide</a></li>
+          <li><a class="link" href="#">About</a></li>
+          <li><a class="link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./js/jquery-3.6.0.js"></script>
+  <script src="./js/navigation effect.js"></script>
+
+</body>
+
+</html>

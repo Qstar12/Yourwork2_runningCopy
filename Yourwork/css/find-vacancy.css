@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Genos:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Itim&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Mina:wght@400;700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poiret+One&family=Montserrart:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrart:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*
+
+CSS rules to specify families
+
+font-family: 'Baloo 2', cursive;
+font-family: 'Barlow', sans-serif;
+font-family: 'Genos', sans-serif;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Josefin Slab', serif;
+font-family: 'Mina', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poiret One', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Prompt', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+
+*/
+
+@font-face {
+  font-family: sansation;
+  src: url('./sansation/Sansation_Regular.ttf');
+}
+
+@font-face {
+  font-family: sansation_bold;
+  src: url('./sansation/Sansation_Bold.ttf');
+}
+
+*,
+*:before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --text-color-primary: #179931;
+  --text-color-secondary: #fff;
+}
+
+body {
+  width: 100%;
+  font-family: sansation;
+}
+
+header {
+  width: 100%;
+  height: max-content;
+  background: #2f2f2f;
+}
+
+header nav {
+  position: static;
+  padding: 10px 3%;
+}
+
+
+
+/* ===== Main section ===== */
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  overflow: scroll;
+}
+
+
+
+/* ===== Left section ===== */
+
+.left-section {
+  width: 27%;
+  min-height: 100vh;
+  background: aliceblue;
+  box-shadow: 4px 0 5px #eee;
+}
+
+.left-section .top {
+  padding: 30px 2.5rem;
+}
+
+.left-section .top>div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.left-section img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.left-section .top .details div {
+  text-align: end;
+}
+
+.left-section .top .details div p {
+  font-size: 20px;
+}
+
+
+
+/* ===== Left section vacancy-categories ===== */
+
+.left-section .vacancy-categories {
+  background: #2f2f2f;
+  height: 100%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 60px;
+  padding: 30px 2.5rem;
+}
+
+.left-section .vacancy-categories div {
+  max-height: 100vh;
+  overflow: scroll;
+}
+
+.left-section .vacancy-categories h2 {
+  color: var(--text-color-secondary);
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.left-section .vacancy-categories div a {
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  color: var(--text-color-secondary);
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
+
+/* ===== vacancies section ===== */
+
+.vacancies {
+  width: 73%;
+  padding: 4%;
+
+}
+
+.vacancies form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.vacancies form input {
+  width: 100%;
+  padding: 9px 20px;
+  background: none;
+  font-size: 17px;
+  border: .5px solid var(--text-color-primary);
+  outline: none;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.vacancies form button,
+.vacancies .heading button {
+  padding: 10px 20px;
+  color: var(--text-color-primary);
+  background: none;
+  border: .3px solid var(--text-color-primary);
+}
+
+.vacancies form button {
+  font-size: 17px;
+  padding: 9px 20px;
+  color: var(--text-color-secondary);
+  background: var(--text-color-primary);
+  border-radius: 5px;
+}
+
+.vacancies .heading button {
+  padding: 5px 10px;
+}
+
+.vacancies .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.vacancies .heading h2,
+.vacancy-cards .card h3 {
+  color: var(--text-color-primary);
+}
+
+.vacancy-cards {
+  height: 100vh;
+  overflow: scroll;
+}
+
+.vacancy-cards .card {
+  width: max-content;
+  padding: 3%;
+  background: aliceblue;
+  box-shadow: 0 5px 5px #eee;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.vacancy-cards .card .header {
+  margin-bottom: 25px;
+}
+
+.vacancy-cards .card .header .caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vacancy-cards .card .header .caption div {
+  display: flex;
+  align-items: center;
+}
+
+.vacancy-cards .card .header .caption div a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.vacancy-cards .card .category {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.vacancy-cards .card .category h3 {
+  margin-right: 10px;
+}
+
+
+
+@media all and (max-width:1300px) {
+  main {
+    flex-direction: column;
+  }
+
+  .left-section {
+    width: 100%;
+    min-height: max-content;
+  }
+
+  .left-section .top .date {
+    justify-content: center;
+    margin: 0;
+  }
+
+  .left-section .top .date h3 {
+    margin: 0 20px;
+  }
+
+
+  .left-section .vacancy-categories {
+    border-radius: 0;
+    height: 70px;
+    padding: 20px 2.5rem;
+    overflow: hidden;
+  }
+
+  .left-section .vacancy-categories h2 {
+    text-align: center;
+  }
+
+  .left-section .vacancy-categories div {
+    text-align: center;
+  }
+
+
+
+  .vacancies {
+    width: 100%;
+  }
+
+  .vacancy-cards .card {
+    overflow: scroll;
+
+  }
+}
+
+
+
+@media all and (max-width:600px) {
+  .left-section .top {
+    padding: 20px 0;
+  }
+
+  .left-section .top>div {
+    flex-direction: column;
+  }
+
+  .left-section .top img {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  .left-section .top .details div {
+    text-align: center;
+  }
+
+  .vacancies .heading {
+    flex-direction: column;
+  }
+
+  .vacancies .heading h2 {
+    margin-bottom: 20px;
+  }
+}
